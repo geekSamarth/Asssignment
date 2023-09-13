@@ -2,7 +2,7 @@
     background: rgba(20, 18, 29, 1);
 }
 .sign-up,.get-started{
-    background: rgba(0, 48, 255, 1);
+    background: rgb(0, 48, 255);
 }
 .heroSection{
     background: linear-gradient(101.59deg, #181623 0.73%, #17245B 99.5%);

@@ -2,7 +2,7 @@ import { BsFillStarFill } from "react-icons/bs";
 import Img1 from "../assets/t1.png";
 import Img2 from "../assets/t2.png";
 import Img3 from "../assets/t3.png";
-const Card = ({ img, name, position, title }) => {
+const Card = ({ img, name, position, title, review }) => {
 	return (
 		<div className="bg-white px-10 py-14 rounded-2xl w-[320px]  font-poppins flex flex-col gap-5">
 			<div className="flex items-center gap-4">
@@ -22,8 +22,7 @@ const Card = ({ img, name, position, title }) => {
 			</h4>
 
 			<p className="font-light text-[#374151] text-base">
-				Ricoz connected me with amazing clients. The quality scoring system ensures
-				I work on exciting projects while maintaining my reputation.
+				{review}
 			</p>
 			<div className="flex gap-1">
 				<BsFillStarFill className="text-yellow-400 text-xl" />
@@ -48,18 +47,21 @@ function Testimonials() {
 						position={"Graduated"}
 						img={Img1}
 						title={"I recommend this to All"}
+						review={"Ricoz connected me with amazing clients. The quality scoring system ensures I work on exciting projects while maintaining my reputation."}
 					/>
 					<Card
 						name="Alice Smith"
 						position={"UI/UX designer"}
 						img={Img2}
 						title={"The Support is Awesome"}
+						review={"As a freelancer, Ricoz's instant serach feature saves me time. It's a one stop platform for all my digital marketing needs."}
 					/>
 					<Card
 						name="Sophia Miller"
 						position={"Student"}
 						img={Img3}
 						title={"A Game Changer For Us"}
+						review={"I've learned and earned on Ricoz. The courses are well-designed, and the integrated tools streamline communication with clients."}
 					/>
 				</div>
 			</div>
